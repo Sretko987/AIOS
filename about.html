@@ -12,7 +12,7 @@
         <nav>
             <u1>
                 <li><a href="index.html">Početna</a></li>
-                <li><a href="about.html" class="active">O projektu</a></li>
+                <li><a href="about.html">O projektu</a></li>
                 <li><a href="contact.html">Kontakt</a></li> 
             </u1>
         </nav>
@@ -29,5 +29,14 @@
          <p>&copy; 2025 AIOS. Sva prava zadržana.</p>
      </footer>
 
+     <script>
+         const links = document.querySelectorAll('nav ul li a');
+         const current = window.location.pathname.split("/").pop();
+         links.forEach(link => {
+             if(link.getAttribute('href') === current) {
+                 link.classList.add('active');
+             }
+         });
+     </script>
 </body>
 </html>
