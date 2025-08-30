@@ -35,7 +35,12 @@ header {
     color: #ffcc00;
   }
   nav ul li a:active,
-  nav ul li a:visited
+  nav ul li a:visited { 
+    color: white;
+  }
+  nav ul li a.active {
+    color #ffcc00;
+}
   main {
     max-width: 800px;
     margin: 20px auto;
