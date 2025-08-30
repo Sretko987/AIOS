@@ -28,6 +28,17 @@
     <footer>
         <p>&copy; 2025 AIOS. Sva prava zadržana.</p>
     </footer>
-    <p>Ovo je prva vezija tvog sajta na GitHub Pages.</p>
+        <p>Ovo je prva vezija tvog sajta na GitHub Pages.</p>
+    </footer>
+
+    <script>
+        const links = document.querySelectorAll('nav il li a');
+        const current=window.location.pathname.split("/").pop();
+        links.forEach(link => {
+            if(link.getAttribute('href') === current) {
+                link.classList.add('active');
+            }
+        });
+   </script>
 </body>
 </html>
