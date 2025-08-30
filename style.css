@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +29,8 @@ header {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
   }
   nav ul li a:hover {
     text-decoration: underline;
@@ -39,7 +41,8 @@ header {
     color: white;
   }
   nav ul li a.active {
-    color #ffcc00;
+    background-color: #333;
+    color: #ffcc00;
 }
   main {
     max-width: 800px;
